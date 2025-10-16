@@ -17,5 +17,5 @@ document.getElementById("loginBtn").addEventListener("click", () => {
 
   // Everything looks good — redirect to homepage
   alert(`Welcome back, ${username}!`);
-  window.location.href = "homepage.html";
+  window.location.href = "index.html";
 });

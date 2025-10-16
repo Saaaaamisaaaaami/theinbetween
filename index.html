@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The In-Between</title>
+  <link rel="stylesheet" href="homepage.css" />
+  <script src="homepage.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- TOP NAVIGATION -->
+  <div class="sumedha">
+    <a href="exercise.html"><div class="hahaha">EXERCISES and QUIZZES that you'll definitely enjoy.</div></a>
+    <a href="articles.html"><div class="hahaha">ARTICLES on everything peacefully imagined</div></a>
+    <a href="journaling.html"><div class="hahaha">JOURNALING about your life, your dreams, insecurities</div></a>
+    <a href="therapist.html"><div class="hahaha">TALKING to someone who believes in you and sees you</div></a>
+  </div>
+
+  <!-- CENTER SECTION -->
+  <div class="milo-container">
+    <img src="https://media.istockphoto.com/id/1916612837/photo/science-portrait-and-group-of-children-with-happiness-at-convention-expo-or-exhibition-for.jpg?s=612x612&w=0&k=20&c=Y6IRzh1LBmfg4nsl5xj7oXdiZCNTt5pgG-vlTUs0P0o=" 
+         alt="Left Image" class="side-image left-img">
+    
+    <div class="srinidhi">
+      <h2>What does the In-Between bring to the table?</h2>
+      <p>A place for peace, creativity, and self-discovery. Here, your emotions and stories belong.</p>
+    </div>
+    
+    <img src="https://www.shutterstock.com/image-photo/talking-mom-attentive-caring-foster-600nw-2586381839.jpg" 
+         alt="Right Image" class="side-image right-img">
+  </div>
+
+  <h3 class="credit">Made with love by Samriddhi ❤️❤️</h3>
+
+  <!-- DASHBOARD -->
+  <div class="dashboard">
+    <div class="box about">
+      <h2>Let's get to know a little bit about you!</h2>
+      <textarea placeholder="Write a few lines about yourself..."></textarea>
+      <button id="saveAbout">Save</button>
+    </div>
+
+    <div class="profile">
+      <img id="profilePic" src="https://via.placeholder.com/200" alt="Profile Picture">
+      <input type="file" id="uploadPic" accept="image/*" style="display: none;">
+      <button id="uploadBtn">Access Your Profile Here</button>
+    </div>
+
+    <div class="box feelings">
+      <h2>Let's get to know how you're feeling today!</h2>
+      <select id="moodSelect">
+        <option value="">Select your mood</option>
+        <option>😊 Happy</option>
+        <option>😐 Neutral</option>
+        <option>😔 Sad</option>
+        <option>😡 Frustrated</option>
+        <option>🥺 Emotional</option>
+        <option>😞 Depressed</option>
+        <option>🫣 Embarassed</option>
+        <option>😎 Chill</option>
+        <option>🤮 Disgusted</option>
+      </select>
+      <textarea placeholder="Now just a little reasoning for these emotions..."></textarea>
+      <button id="saveMood">Submit</button>
+    </div>
+  </div>
+  <footer>
+    <h1>WELCOME</h1>
+<ul>Emergency Contact Numbers:
+<li>112. Integrated Helpline Emergency Response Support System (ERSS)</li>
+<li>102. National Ambulance Service (NAS).</li>
+<li>100. Police Helpline.</li>
+<li>101. Fire Helpline.</li>
+</ul>
+  </footer>
+  <!-- Customizer Button -->
+<div class="customizer-btn" id="customizerBtn">
+  ⚙️
+</div>
+
+<!-- Customizer Panel -->
+<div class="customizer-panel" id="customizerPanel">
+  <h3>Customize Your Page ✨</h3>
+  <label>Background Color:</label>
+  <input type="color" id="bgColorPicker" />
+
+  <label>Text Color:</label>
+  <input type="color" id="textColorPicker" />
+
+  <label>Font:</label>
+  <select id="fontSelect">
+    <option value="'Bubblegum Sans', sans-serif">Bubblegum Sans</option>
+    <option value="'Poppins', sans-serif">Poppins</option>
+    <option value="'Caveat', cursive">Caveat</option>
+  </select>
+</div>
+
+<div class="signout-container">
+  <a href="login.html" id="signOutBtn">Sign Out</a>
+</div>
+</body>
+</html>

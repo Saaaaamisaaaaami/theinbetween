@@ -47,5 +47,5 @@ document.getElementById("signInBtn").addEventListener("click", () => {
   }
 
   alert(`Welcome, ${username}!`);
-  window.location.href = "homepage.html";
+  window.location.href = "index.html";
 });
