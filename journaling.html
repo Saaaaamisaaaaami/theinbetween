@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The In-Between</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="journaling.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="friendly-tagline">
+    <p>Journaling. Exciting sometimes, but if it's boring, you can always scream into the void :D</p>
+  </header>
+
+  <main class="main-layout">
+    <!-- LEFT COLUMN: Questions -->
+    <section class="questions">
+      <div class="questions-header">
+        <h2>Let's answer the three big questions! Sorry, it's mandatory.</h2>
+      </div>
+
+      <div class="question-block">
+        <label for="q1">What was the happiest you felt today?</label>
+        <textarea id="q1"></textarea>
+      </div>
+      <div class="question-block">
+        <label for="q2">List three kind deeds you did today</label>
+        <textarea id="q2"></textarea>
+      </div>
+      <div class="question-block">
+        <label for="q3">How did you navigate a conflicting situation today?</label>
+        <textarea id="q3"></textarea>
+      </div>
+
+      <button id="submitQuestions">Submit Answers</button>
+
+      <p class="disclaimer">
+        Remember anything inappropriate will earn you a one-way ticket to a LOT of consequences :D!
+      </p>
+    </section>
+
+    <!-- RIGHT COLUMN: Journal Page -->
+    <section class="journal">
+      <div class="journal-header">
+        <p>Write. Just write. These pages go on for ages.</p>
+      </div>
+
+      <div class="journal-body">
+        <div class="editor-toolbar">
+          <button id="boldBtn"><b>B</b></button>
+          <button id="italicBtn"><i>I</i></button>
+          <button id="underlineBtn"><u>U</u></button>
+          <button id="emojiBtn">😊</button>
+          <button id="imageBtn">🖼️</button>
+          <button class="save" id="saveJournal">Save</button>
+        </div>
+
+        <div class="editor-content">
+          <textarea id="journalText" placeholder="Start writing here..."></textarea>
+          <button class="submit" id="submitJournal">Save and Submit</button>
+        </div>
+      </div>
+
+      <div class="journal-footer">
+        <button id="prevPage">Last page</button>
+        <a href="void.html"><button class="void">I wanna pause writing. Let's go to the VOID!</button></a>
+        <button id="nextPage">Next page</button>
+      </div>
+    </section>
+  </main>
+  <script src="journaling.js"></script>
+ <footer class="footer-nav">
+  <nav>
+    <a href="homepage.html" class="footer-btn">🏠 Home</a>
+    <a href="articles.html" class="footer-btn">Articles</a>
+    <a href="exercise.html" class="footer-btn">🏃🏻‍♂️ Exercise</a>
+    <a href="therapist.html" class="footer-btn">Therapist Contact</a>
+  </nav>
+</footer>
+</body>
+</html>

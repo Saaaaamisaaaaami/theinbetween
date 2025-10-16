@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The In-Between</title>
+  <link rel="stylesheet" href="signup.css" />
+  <script src="signup.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet" />
+</head>
+<body class="body">
+  <!-- Welcome Header -->
+  <div class="container">
+    <div class="welcomein">
+      <h1>Welcome to the In-Between!</h1>
+    </div>
+  </div>
+
+  <!-- Sign-up form -->
+  <div class="enterinname">
+    <input type="text" id="fullName" placeholder="Full Name" />
+    <input type="email" id="email" placeholder="Email Address" />
+    <input type="date" id="dob" placeholder="Date of Birth" />
+
+    <div class="parentguardian">
+      <input type="text" id="guardianName" placeholder="Guardian's Full Name" />
+      <input type="email" id="guardianEmail" placeholder="Guardian's Email Address" />
+      <input type="date" id="guardianDob" placeholder="Guardian's Date of Birth" />
+    </div>
+
+    <button id="submitBtn">Submit</button>
+    <h3>Hi! We're so happy you're taking this journey with us.</h3>
+    <a href="login.html"><h3>Already have an account? Log in.</h3></a>
+  </div>
+
+  <!-- Personality / Avatar section -->
+  <div class="personality">
+    <div class="avatar-section">
+      <img id="avatarImage" src="avatar-placeholder.png" alt="Avatar" class="avatar-image" />
+      <input type="file" id="avatarUpload" accept="image/*" style="display:none"/>
+      <button id="avatarBtn">Create Avatar Here...</button>
+    </div>
+
+    <div class="info-section">
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <input type="password" id="repeatPassword" placeholder="Repeat Password" />
+      <p>Everything in this website is end-to-end encrypted and completely secure.</p>
+    </div>
+  </div>
+
+  <!-- Sign-in button -->
+  <div class="sign-in">
+    <button id="signInBtn">SIGN IN</button>
+  </div>
+</body>
+</html>
+

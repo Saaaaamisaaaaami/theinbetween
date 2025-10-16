@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: "Bubblegum Sans", sans-serif;
+  background-color: #faf9f6;
+  color: #222;
+}
+
+/* HEADER */
+.friendly-tagline {
+  text-align: center;
+  background: linear-gradient(135deg, #74c365, #5bacc9);
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  border-bottom: 3px solid #4da1a9;
+}
+
+/* MAIN LAYOUT */
+.main-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* LEFT COLUMN (QUESTIONS) */
+.questions {
+  flex: 1;
+  background: #5bacc9;
+  color: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(91, 172, 201, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.questions-header h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.question-block {
+  margin-bottom: 20px;
+}
+
+.question-block label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.question-block textarea {
+  width: 100%;
+  height: 80px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: inherit;
+  resize: none;
+  background: #faf9f6;
+  color: #000;
+}
+
+.disclaimer {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* RIGHT COLUMN (JOURNAL) */
+.journal {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(91, 172, 201, 0.3);
+  padding: 25px;
+  height: 600px;
+}
+
+/* Journal header */
+.journal-header {
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Journal body layout */
+.journal-body {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+/* Toolbar (icons) */
+.editor-toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.editor-toolbar button {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #5bacc9;
+  border-radius: 10px;
+  font-size: 20px;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.editor-toolbar button:hover {
+  background: linear-gradient(135deg, #74c365, #5bacc9);
+  color: white;
+}
+
+.editor-toolbar .save {
+  width: 60px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Editor text area */
+.editor-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.editor-content textarea {
+  flex-grow: 1;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+}
+
+.editor-content .submit {
+  align-self: flex-end;
+  background: #5bacc9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.editor-content .submit:hover {
+  background: #74c365;
+}
+
+/* Footer buttons */
+.journal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.journal-footer button {
+  border: 2px solid #000;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.journal-footer button:hover {
+  background: linear-gradient(135deg, #74c365, #5bacc9);
+  color: white;
+}
+
+.journal-footer .void {
+  flex-grow: 1;
+  margin: 0 10px;
+  
+}.footer-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #74c365, #5bacc9);
+  padding: 10px 0;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.footer-nav nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-nav .footer-btn {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.footer-nav .footer-btn:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.1);
+}

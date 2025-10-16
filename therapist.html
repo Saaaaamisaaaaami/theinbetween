@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The In-Between</title>
+  <link rel="stylesheet" href="therapist.css" />
+  <script src="therapist.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="sampriti">
+  <h2>Let's talk. It feels good to talk. But only if you want to.</h2>
+  <p>Parents, guardians, we're gonna need you on here.</p>
+  <button>Possible Therapists to Consult For Your Child</button>
+</div>
+
+<div class="bhavna">
+  <div class="box">
+    <img src="https://imageio.forbes.com/specials-images/imageserve/5f9a0679ca21fdb232d2768d/Ten-Career-Tips-for-Every-Working-Woman/960x0.jpg" alt="Sonia" />
+    <h3>Sonia</h3>
+    <p>Specialisation: Insomnia</p>
+    <button>Let's Do It!</button>
+  </div>
+
+  <div class="box">
+    <img src="https://img.freepik.com/free-photo/close-up-portrait-handsome-smiling-young-man-white-t-shirt-blurry-outdoor-nature_176420-6305.jpg" alt="Patrick" />
+    <h3>Patrick</h3>
+    <p>Specialisation: Anxiety</p>
+    <button>Let's Do It!</button>
+  </div>
+
+  <div class="box">
+    <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg" alt="Danya" />
+    <h3>Danya</h3>
+    <p>Specialisation: Sibling Issues</p>
+    <button>Let's Do It!</button>
+  </div>
+</div>
+
+<div class="message-box">
+  <p>Oh! No more needed. Your child is good to go! Just give them a little more attention if they're feeling worried :D</p>
+</div>
+
+<div class="options">
+  <h2>Not comfortable to talk face-to-face? That's totally fine.</h2>
+  <button id="emailBtn">Email</button>
+  <button id="chatBtn">Chat</button>
+  <button id="callBtn">Voice Call</button>
+</div>
+
+<!-- EMAIL MODAL -->
+<div id="emailModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Send an Email</h2>
+    <form id="emailForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message..." rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+<!-- CHAT MODAL -->
+<div id="chatModal" class="modal">
+  <div class="modal-content chat-box">
+    <span class="close">&times;</span>
+    <h2>Chat With Us 💬</h2>
+    <div id="chatMessages"></div>
+    <input id="chatInput" type="text" placeholder="Type your message..." />
+  </div>
+</div>
+
+<!-- VOICE CALL MODAL -->
+<div id="callModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Voice Call</h2>
+    <p>📞 Connecting you to a therapist...</p>
+    <div class="call-animation"></div>
+  </div>
+</div>
+ <footer class="footer-nav">
+  <nav>
+    <a href="homepage.html" class="footer-btn">🏠 Home</a>
+    <a href="articles.html" class="footer-btn">Articles</a>
+    <a href="exercise.html" class="footer-btn">🏃🏻‍♂️ Exercise</a>
+    <a href="journaling.html" class="footer-btn">📝 Journaling</a>
+  </nav>
+</footer>
+</body>
+</html>

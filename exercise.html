@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The In-Between</title>
+  <link rel="stylesheet" href="exercise.css" />
+  <script src="exercise.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="anika">
+    <!-- Four exercise boxes -->
+    <div class="OMGLOL">
+      <h3>Breathing</h3>
+       <img src="https://bhtherapygroup.com/wp-content/uploads/2024/04/Breathing-Techniques-scaled.jpeg" alt="Breathing Exercise" class="exercise-img">
+ <button class="start-btn" data-exercise="Breathing">Start</button>
+    </div>
+    <div class="OMGLOL">
+      <h3>Mindfulness</h3>
+       <img src="https://i0.wp.com/mindfulstoic.net/wp-content/uploads/2024/02/An-animation-of-a-woman-watering-a-garden-on-top-of-her-hear-to-represent-an-article-on-mindfulness.jpg?fit=1080%2C608&ssl=1" alt="Mindfulness Exercise" class="exercise-img">
+ <button class="start-btn" data-exercise="Breathing">Start</button>
+    </div>
+    <div class="jaswitha">
+      <button>See more fun quizzes and peaceful exercises!</button>
+    </div>
+    <div class="OMGLOL">
+      <h3>Who are you as a person?</h3>
+       <img src="https://media.licdn.com/dms/image/v2/C5112AQFaIl2kl_6M6A/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1528623404758?e=2147483647&v=beta&t=Ij-quOYENQxhSa6XCZhVicCidKyOj0-gVntWgCbH8ZE" alt="Stretching Exercise" class="exercise-img">
+ <button class="start-btn" data-exercise="Breathing">Start</button>
+    </div>
+    <div class="OMGLOL">
+      <h3>Reflection</h3>
+       <img src="https://teaching.ucla.edu/wp-content/uploads/2025/04/Relfective_Teaching_Web.png" alt= "Reflection Exercise" class="exercise-img">
+ <button class="start-btn" data-exercise="Breathing">Start</button>
+    </div>
+  </div>
+
+  <!-- Screen time and timer section -->
+  <div class="screen-time">
+    <!-- SCREEN TIME CARD -->
+    <div class="card">
+      <h3>Screen Time</h3>
+      <p>How much time did you spend online today? Check here.</p>
+      <a href="articles.html"><button>Useful articles can be accessed here.</button></a>
+      <p>You’ve been here for <span id="timeCount">00:00</span></p>
+    </div>
+<!-- TIMER PANEL (updated buttons and display for JS) -->
+<div class="card timer-panel">
+  <p class="timer-info">
+    Take all the time you need to work through the exercises, but make sure to set it first.
+  </p>
+
+  <div class="timer-buttons">
+    <button id="alarmBtn">Alarm</button>
+    <button id="stopwatchBtn">Stopwatch</button>
+  </div>
+
+  <div class="timer-box">
+    <h4 id="timerDisplay">00:00</h4>
+    <button id="startTimer">Start</button>
+    <button id="resetTimer">Reset</button>
+  </div>
+
+  <div class="categories">
+    <div class="cat-item">
+      <span>Journaling</span>
+      <button class="adjust-btn">⚙</button>
+    </div>
+    <div class="cat-item">
+      <span>Exercise & Quizzes</span>
+      <button class="adjust-btn">⚙</button>
+    </div>
+    <div class="cat-item">
+      <span>Reading</span>
+      <button class="adjust-btn">⚙</button>
+    </div>
+    <div class="cat-item">
+      <span>Studying</span>
+      <button class="adjust-btn">⚙</button>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer navigation -->
+  <footer class="footer-nav">
+    <nav>
+      <a href="homepage.html" class="footer-btn">Home</a>
+      <a href="journaling.html" class="footer-btn">Journaling</a>
+      <a href="articles.html" class="footer-btn">Articles</a>
+      <a href="therapist.html" class="footer-btn">Therapist Contact</a>
+    </nav>
+  </footer>
+</body>

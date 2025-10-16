@@ -1,0 +1,367 @@
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f5fcff 0%, #faf9f6 100%);
+  color: #000000;
+  font-family: "Bubblegum Sans", sans-serif;
+  padding-top: 20px;
+  overflow-x: hidden;
+}
+
+/* 🌸 Top navigation (sumedha) */
+.sumedha {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 25px 40px;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 0 0 20px 20px;
+}
+
+.hahaha {
+  background: linear-gradient(135deg, #5bacc9, #74c365);
+  color: white;
+  padding: 18px 25px;
+  border-radius: 12px;
+  font-size: 1.05em;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(91, 172, 201, 0.25);
+  margin-left: 10px;
+}
+
+.hahaha:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #74c365, #5bacc9);
+  box-shadow: 0 10px 25px rgba(91, 172, 201, 0.35);
+}
+
+/* 🌿 Middle content section */
+.milo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.srinidhi {
+  background: white;
+  color: #000;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(91, 172, 201, 0.2);
+  width: 40%;
+  transition: transform 0.3s ease;
+}
+
+.srinidhi:hover {
+  transform: scale(1.03);
+}
+
+.srinidhi h2 {
+  color: #5bacc9;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.srinidhi p {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.side-image {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.side-image:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 12px 25px rgba(91, 172, 201, 0.3);
+}
+
+/* 🌻 Dashboard Section */
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: 25%;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(91, 172, 201, 0.3);
+}
+
+.box textarea,
+.box select {
+  width: 90%;
+  margin-top: 15px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 2px solid #5bacc9;
+  border-radius: 8px;
+  outline: none;
+  resize: none;
+}
+
+.box button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #5bacc9;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.box button:hover {
+  background-color: #74c365;
+}
+
+/* 🌙 Profile Section */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(91, 172, 201, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 20%;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+}
+
+.profile:hover {
+  transform: scale(1.05);
+}
+
+.profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #5bacc9;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+}
+
+.profile button {
+  background-color: #5bacc9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile button:hover {
+  background-color: #74c365;
+}
+
+/* 💫 Footer credit */
+.credit {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.1em;
+  color: #74c365;
+}
+
+/* 📱 Responsive */
+@media (max-width: 900px) {
+  .sumedha {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hahaha {
+    margin: 10px;
+    width: 80%;
+  }
+
+  .milo-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .srinidhi {
+    width: 80%;
+  }
+
+  .side-image {
+    width: 80%;
+    height: auto;
+  }
+
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box, .profile {
+    width: 80%;
+  }
+}footer {
+  background: linear-gradient(135deg, #5bacc9, #74c365);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Bubblegum Sans", sans-serif;
+  position: relative;
+  margin-top: 80px;
+}
+
+/* Footer title */
+footer h1 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* The list container */
+footer ul {
+  list-style: none; /* removes bullet points */
+  padding: 0;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px; /* spacing between list items */
+}
+
+/* Individual list items */
+footer li {
+  font-size: 1.1em;
+  opacity: 0.9;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effects for links */
+footer li:hover {
+  transform: translateY(-4px);
+  color: #faf9f6;
+  text-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+
+/* Footer bottom line */
+.footer-bottom {
+  font-size: 0.9em;
+  opacity: 0.8;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 15px;
+  margin-top: 20px;
+}
+/* Customizer Button */
+.customizer-btn {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  background: linear-gradient(135deg, #74c365, #5bacc9);
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+.customizer-btn:hover {
+  transform: rotate(20deg) scale(1.1);
+  box-shadow: 0 0 20px rgba(91, 172, 201, 0.6);
+}
+
+/* Customizer Panel */
+.customizer-panel {
+  position: fixed;
+  bottom: 170px;
+  right: 30px;
+  background-color: #faf9f6;
+  color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Bubblegum Sans", sans-serif;
+  width: 220px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+.customizer-panel label {
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.customizer-panel input,
+.customizer-panel select {
+  width: 100%;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.signout-container {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#signOutBtn {
+  text-decoration: none;
+  background: #ff4d4d;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: inherit;
+  transition: 0.3s;
+}
+
+#signOutBtn:hover {
+  background: #ff1a1a;
+}

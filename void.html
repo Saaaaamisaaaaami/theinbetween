@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Void</title>
+  <link rel="stylesheet" href="void.css">
+  <script src="void.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="header">
+    <h2>The Void... a large, dark mound of space. Anything that is said is immediately thrust into oblivion.</h2>
+    <p>Go on. Say whatever you want. The universe will listen. Only listen.</p>
+  </div>
+
+  <div class="void-container">
+    <textarea id="userText" placeholder="Enter text here..." maxlength="100000"></textarea>
+    <div class="char-count" id="charCount">0/100000</div>
+    <button id="screamBtn">SCREAM!</button>
+  </div>
+
+  <div class="back">
+    <a href="journaling.html"><button>Back To Journaling</button></a>
+  </div>
+
+  <!-- Full-screen void transition -->
+  <div id="voidTransition">
+    <div class="void-glow"></div>
+    <p id="voidMessage">Sending your thoughts into the void... 🌙</p>
+  </div>
+</body>
+</html>
